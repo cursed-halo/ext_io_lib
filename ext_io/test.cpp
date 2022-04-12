@@ -7,6 +7,7 @@
 using std::cout, std::cin, std::string;
 
 int main(void) {
+	
 	int n = getInt("Enter Int : ");
 	float f = getFloat("Enter Float : ");
 	char c = getChar("Enter Char : ");
@@ -15,4 +16,5 @@ int main(void) {
 	
 	cout << "\nPrinting Values\n";
 	cout << n << "\n" << f << "\n" << c << "\n" << s << "\n" << b << "\n";
+	
 }

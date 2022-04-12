@@ -10,6 +10,9 @@ using std::cout, std::cin, std::string;
 #ifndef ext_io_h
 #define ext_io_h
 
+// const vars 
+const int MAXIMUM = 10000;
+
 // functions to simplify user input
 
 // prompt for input, return int
@@ -39,7 +42,11 @@ char getChar(const string m = "Enter Char : ") {
 	cout << m;
 	cin >> temp;
 	
-	return temp;
+	if(int(temp) >= 0 && int(temp) <= 127){
+		return temp;
+	} else {
+		return 'A'; // default case, may not work
+	}
 }
 
 // prompt for input, return string
@@ -47,7 +54,8 @@ string getString(const string m = "Enter String : ") {
 	string temp;
 	
 	cout << m;
-	cin.clear();
+	cin.clear(); // clear immediate buffer
+	cin.ignore(MAXIMUM, '\n'); // ignore the next MAX characters upto \n
 	getline(cin, temp);
 	
 	return temp;
