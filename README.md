@@ -9,6 +9,8 @@
 - [ ] `getCharArr();` : Get char array
 - [ ] `disp();` : Display any argument with formatting
 
+---
+
 ## Current Features
 - Get Integer : `getInt("Prompt Goes Here");`
 - Get Float   : `getFloat("Prompt Goes Here");`
