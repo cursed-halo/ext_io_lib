@@ -8,5 +8,11 @@ using std::cout, std::cin, std::string;
 
 int main(void) {
 	int n = getInt("Enter Int : ");
-	cout << n;
+	float f = getFloat("Enter Float : ");
+	char c = getChar("Enter Char : ");
+	string s = getString();
+	bool b = getBool();
+	
+	cout << "\nPrinting Values\n";
+	cout << n << "\n" << f << "\n" << c << "\n" << s << "\n" << b << "\n";
 }

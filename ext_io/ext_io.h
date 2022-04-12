@@ -12,7 +12,8 @@ using std::cout, std::cin, std::string;
 
 // functions to simplify user input
 
-int getInt(const string m) {
+// prompt for input, return int
+int getInt(const string m = "Enter Int : ") {
 	int temp;
 	
 	cout << m;
@@ -21,7 +22,8 @@ int getInt(const string m) {
 	return temp;
 }
 
-float getFloat(const string m) {
+// prompt for input, return float
+float getFloat(const string m = "Enter Float : ") {
 	float temp;
 	
 	cout << m;
@@ -30,7 +32,8 @@ float getFloat(const string m) {
 	return temp;
 }
 
-char getChar(const string m) {
+// prompt for input, return char
+char getChar(const string m = "Enter Char : ") {
 	char temp;
 	
 	cout << m;
@@ -39,7 +42,8 @@ char getChar(const string m) {
 	return temp;
 }
 
-string getString(const string m) {
+// prompt for input, return string
+string getString(const string m = "Enter String : ") {
 	string temp;
 	
 	cout << m;
@@ -47,6 +51,21 @@ string getString(const string m) {
 	getline(cin, temp);
 	
 	return temp;
+}
+
+// prompt for input, return bool
+bool getBool(const string m = "Enter Bool : ") {
+	bool temp;
+	
+	cout << m;
+	cin >> temp;
+	
+	// testing with if - convert to try catch
+	if(temp == 0 || temp == 1){
+		return temp;
+	} else {
+		return 1; // returns 1 if input is anything other than 0 or 1
+	}
 }
 
 // end of header
