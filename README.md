@@ -12,11 +12,12 @@
 - Get String  : `getString("Prompt Goes Here");`
 - Get Bool    : `getBool("Prompt Goes Here");`
 
+---
+
 ## How To Use 
 - Download ext_io.h
 - Place it on the directory of your project
 - Include ext_io.h
-
 
 ---
 
@@ -29,3 +30,5 @@ May be found inside the test.cpp file included with the header file.
 - Input buffer might break things, specially `getString();`
 - Exception handling not implemented yet
 - Out of bound values might cause stack overflows
+
+---
