@@ -1,9 +1,13 @@
-# ext_io_lib - The C++ Library Extension - WIP
+# ext_io_lib - The C++ Library Extension - WIP - Inspired By CS50.h
 **C++ library that seeks to add basic I/O features**
 
-
-
 ---
+
+## Planned Features
+- [ ] `getIntArr();` : get int array
+- [ ] `getFloatArr();` : Get float array
+- [ ] `getCharArr();` : Get char array
+- [ ] `disp();` : Display any argument with formatting
 
 ## Current Features
 - Get Integer : `getInt("Prompt Goes Here");`
