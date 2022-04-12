@@ -8,9 +8,9 @@
 
 // example use cases
 int main(void) {
-	int n = getInt();
-	float f = getFloat();
-	char c = getChar();
+	int n = getInt("Custom Prompts Allowed : ");
+	float f = getFloat("Otherwise Default Prompt Is : ");
+	char c = getChar("\"Enter Datatype :\"");
 	string s = getString();
 	bool b = getBool();
 	
