@@ -1,4 +1,4 @@
-# ext_io_lib - The C++ Library Extension - WIP - Inspired By CS50.h
+# ext_io_lib - The C++ Library Extension - WIP - Inspired By CS50.h - *CURRENT RELEASE OUT OF DATE*
 **C++ library that seeks to add basic I/O features**
 
 ---
