@@ -13,7 +13,7 @@ using std::cout, std::cin, std::string;
 // const vars 
 const int MAXIMUM = 10000;
 
-// functions to simplify user input
+// ===================regular input functions====================//
 
 // prompt for input, return int
 int getInt(const string m = "Enter Int : ") {
@@ -73,6 +73,46 @@ bool getBool(const string m = "Enter Bool : ") {
 		return temp;
 	} else {
 		return 1; // returns 1 if input is anything other than 0 or 1
+	}
+}
+
+// ===================array input functions====================//
+
+// prompt for input, return pointer to new <int>heap array
+int *getIntArr(int l = 5, const string m = "\nEnter Array Elements\n") {
+	if(l <= 0) {
+		cout << "\nError : Array Size <= 0\n";
+		l = 5; // set length to 5
+	} // pseudo error handling for length less than or equals to 0
+	
+	int *a = new int[l]; // creating array with length l on heap
+	
+	cout << m;
+	
+	for(int i = 0; i < l; i++) {
+		cout << "Element [" << i << "] = ";
+		cin >> a[i];
+	}
+	
+	return a; // return address of first element in array
+}
+
+// ===================regular display functions====================//
+// WIP
+// ===================array display functions====================//
+
+// display int array of length l
+void showIntArr(int *p, int l = 5) {
+	int *px = p; // hold address of p
+	
+	if(l <= 0) {
+		cout << "\nError : Array Size <= 0\n";
+		l = 5; // set length to 5
+	} // pseudo error handling for length less than or equals to 0
+	
+	for(int i = 0; i < l; i++) {
+		cout << "E[" << i << "] = " << *px << "\tA[" << i << "] = " << px << "\n";
+		px++;
 	}
 }
 
