@@ -4,10 +4,12 @@
 ---
 
 ## Planned Features
-- [ ] `getIntArr();` : get int array
+- [X] `getIntArr();` : Get int array
 - [ ] `getFloatArr();` : Get float array
 - [ ] `getCharArr();` : Get char array
-- [ ] `disp();` : Display any argument with formatting
+- [ ] `dispIntArr();` : Display any argument with formatting
+- [ ] `dispCharArr();` : Display any argument with formatting
+- [ ] `dispFloatArr();` : Display any argument with formatting
 
 ---
 
