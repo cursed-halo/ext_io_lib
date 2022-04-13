@@ -7,9 +7,9 @@
 - [X] `getIntArr();` : Get int array
 - [ ] `getFloatArr();` : Get float array
 - [ ] `getCharArr();` : Get char array
-- [ ] `dispIntArr();` : Display any argument with formatting
-- [ ] `dispCharArr();` : Display any argument with formatting
-- [ ] `dispFloatArr();` : Display any argument with formatting
+- [X] `showIntArr();` : Display any argument with formatting
+- [ ] `showCharArr();` : Display any argument with formatting
+- [ ] `showFloatArr();` : Display any argument with formatting
 
 ---
 
@@ -19,6 +19,8 @@
 - Get Char    : `getChar("Prompt Goes Here");`
 - Get String  : `getString("Prompt Goes Here");`
 - Get Bool    : `getBool("Prompt Goes Here");`
+- Get Int Array : `getIntArr(size, "Prompt Goes Here");`
+- Display Int Array : `showIntArr(arr_ptr, size);`
 
 ---
 
@@ -30,7 +32,7 @@
 ---
 
 ## Sample Use Cases
-May be found inside the test.cpp file included with the header file.
+Check the test.cpp file for implementation details
 
 ---
 
