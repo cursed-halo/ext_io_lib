@@ -155,6 +155,24 @@ void showIntArr(int *p, int l = 5)
 	}
 }
 
+// display float array of length l
+void showFloatArr(float *p, int l = 5)
+{
+	float *px = p; // hold address of p
+
+	if (l <= 0)
+	{
+		cout << "\nError : Array Size <= 0\n";
+		l = 5; // set length to 5
+	}		   // pseudo error handling for length less than or equals to 0
+
+	for (int i = 0; i < l; i++)
+	{
+		cout << "E[" << i << "] = " << *px << "\tA[" << i << "] = " << px << "\n";
+		px++;
+	}
+}
+
 // end of header
 
 #endif
