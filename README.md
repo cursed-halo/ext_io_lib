@@ -21,6 +21,12 @@
 - Get Bool    : `getBool("Prompt Goes Here");`
 - Get Int Array : `getIntArr(size, "Prompt Goes Here");`
 - Display Int Array : `showIntArr(arr_ptr, size);`
+- Get Float Array : `getFloatArr(size, "Prompt Goes Here");`
+- Display Float Array : `showFloatArr(arr_ptr, size);`
+- Get Char Array : `getCharArr(size, "Prompt Goes Here");`
+- Display Char Array : `showCharArr(arr_ptr, size);`
+- Get Bool Array : `getBoolArr(size, "Prompt Goes Here");`
+- Display Bool Array : `showBoolArr(arr_ptr, size);`
 
 
 

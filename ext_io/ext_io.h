@@ -135,6 +135,25 @@ char *getCharArr(int l = 5, const string m = "\nEnter Array Elements\n") {
 	return a; // return address of first element in array
 }
 
+// prompt for input, return pointer to new <bool>heap array
+bool *getBoolArr(int l = 5, const string m = "\nEnter Array Elements\n") {
+	if (l <= 0) {
+		cout << "\nError : Array Size <= 0\n";
+		l = 5; // set length to 5
+	}		   // pseudo error handling for length less than or equals to 0
+
+	bool *a = new bool[l]; // creating array with length l on heap
+
+	cout << m;
+
+	for (int i = 0; i < l; i++) {
+		cout << "Element [" << i << "] = ";
+		cin >> a[i];
+	} // anything but a 0 or a 1 will mess up the whole thing
+
+	return a; // return address of first element in array
+}
+
 // ===================regular display functions====================//
 // WIP
 // ===================array display functions====================//
@@ -187,6 +206,21 @@ void showCharArr(char *p, int l = 5) {
 	// instead acting like a stack 
 	// showing up as a triangle of inserted chars
 	// don't use
+}
+
+// display bool array of length l
+void showBoolArr(bool *p, int l = 5) {
+	bool *px = p; // hold address of p
+
+	if (l <= 0) {
+		cout << "\nError : Array Size <= 0\n";
+		l = 5; // set length to 5
+	}		   // pseudo error handling for length less than or equals to 0
+
+	for (int i = 0; i < l; i++) {
+		cout << "E[" << i << "] = " << *px << "\tA[" << i << "] = " << px << "\n";
+		px++;
+	}
 }
 
 // end of header
