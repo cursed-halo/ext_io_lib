@@ -182,12 +182,11 @@ void showCharArr(char *p, int l = 5) {
 		cout << "E[" << i << "] = " << *px << "\tA[" << i << "] = " << px << "\n";
 		px++;
 	}
-	/* this is absolutely not working as intended 
-	 * expected output should have memory for pointer for ith value 
-	 * instead acting like a stack 
-	 * showing up as a triangle of inserted chars
-	 * don't use
-	 * /
+	
+	// expected output should have memory for pointer for ith value 
+	// instead acting like a stack 
+	// showing up as a triangle of inserted chars
+	// don't use
 }
 
 // end of header
