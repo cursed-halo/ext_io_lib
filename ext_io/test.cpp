@@ -27,7 +27,7 @@ int main(void) {
 
 	int *p = getIntArr(2);
 	showIntArr(p, 2);
-	
+
 	float *f = getFloatArr(2);
 	showFloatArr(f, 2);
 
