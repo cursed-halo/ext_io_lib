@@ -8,28 +8,44 @@
 
 // example use cases
 int main(void) {
-	// for regular input types
+	// uncomment the applicable use case to test 
+	
+	// basic input types, returns the value(s)
 
-	int n = getInt("Custom Prompts Allowed : ");
-	float f = getFloat("Otherwise Default Prompt Is : ");
-	char c = getChar("\"Enter Datatype :\"");
-	string s = getString();
-	bool b = getBool();
+	// int n = getInt();
+	// float f = getFloat();
+	// char c = getChar();
+	// string s = getString();
+	// bool b = getBool();
 
+	// print the basic input types just to test
+	/*
 	cout << "\nPrinting Values\n";
 	cout << n << "\n"
 		 << f << "\n"
 		 << c << "\n"
 		 << s << "\n"
 		 << b << "\n";
-
+	*/
+	
 	// for array related functions
+	// must declare a relevant pointer for this to work, like below
+	
+	// int array, returns pointer to first memory addr of heap
+	// int *ii = getIntArr(2);
+	// showIntArr(ii, 2);
 
-	int *p = getIntArr(2);
-	showIntArr(p, 2);
+	// float array, returns pointer to first memory addr of heap
+	// float *ff = getFloatArr(2);
+	// showFloatArr(ff, 2);
+	
+	// char array, returns pointer to first memory addr of heap
+	// char *cc = getCharArr(2);
+	// showCharArr(cc, 2); // this gives unexpected results
 
-	float *f = getFloatArr(2);
-	showFloatArr(f, 2);
+	// bool array, returns pointer to first memory addr of heap
+	// bool *bb = getBoolArr(2);
+	// showBoolArr(bb, 2);
 
 	return 0;
 }
