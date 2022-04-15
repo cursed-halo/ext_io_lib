@@ -47,5 +47,6 @@ Check the test.cpp file for implementation details
 - Exception handling not implemented yet
 - Out of bound values might cause stack overflows
 - `showCharArr();` has problems printing the memory location 
-
+- `showXArr();` is just a demo function for now, and causes several issues with formatting
+- `getBoolArr();` has a hard time with any non `true` or `false` inputs and gives unexpected results 
 
