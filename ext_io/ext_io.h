@@ -223,6 +223,17 @@ void showBoolArr(bool *p, int l = 5) {
 	}
 }
 
+// =======================array functions=======================//
+// return the sum of all members of int array
+long int intSum(int *arrPtr, int len) {
+	long int sum = 0; // set sum to 0
+	
+	for(int i = 0; i < len; i++) {
+		sum += arrPtr[i]; // where arrPtr just points to the beginning of
+	}					  // some array
+	
+	return sum;
+}
 // end of header
 
 #endif

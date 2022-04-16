@@ -5,7 +5,15 @@
 #include "ext_io.h" // include in CURRENT directory
 
 // using std::cout, std::cin, std::string;
-
+long int intSum(int *arrPtr, int len) {
+	long int sum = 0; // set sum to 0
+	
+	for(int i = 0; i < len; i++) {
+		sum += arrPtr[i];
+	}
+	
+	return sum;
+}
 // example use cases
 int main(void) {
 	// uncomment the applicable use case to test 
@@ -49,16 +57,16 @@ int main(void) {
 	
 	// sample use case with int array to 
 	// calculate sum of elements of arr
-	/*
-	int sum = 0;
+	
+	// int sum = 0;
 	int lenArr = 5; // fixed length
 	int *n = getIntArr(lenArr, "Enter Marks : ");
-	
+	/*
 	for(int i = 0; i < lenArr; i++) {
 		sum += n[i];
 	}
-	
-	cout << "Sum = " << sum << "\n";
 	*/
+	cout << "Sum = " << intSum(n, lenArr) << "\n";
+	
 	return 0;
 }
