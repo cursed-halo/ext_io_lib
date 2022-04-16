@@ -20,7 +20,7 @@
 - [ ] : Update the release
 - [ ] : Implement a bashscript for each install
 - [ ] : Sum all elements of int, float arrays
-- [ ] : Average all elements of int, float arrays
+- [ ] : Average all elements of int, float arrays - **WIP**
 - [ ] : Find element by value or index in arrays
 
 
