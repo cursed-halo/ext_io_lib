@@ -19,6 +19,9 @@
 - [ ] : Write errors to a proper error log file
 - [ ] : Update the release
 - [ ] : Implement a bashscript for each install
+- [ ] : Sum all elements of int, float arrays
+- [ ] : Average all elements of int, float arrays
+- [ ] : Find element by value or index in arrays
 
 
 ## Current Features
