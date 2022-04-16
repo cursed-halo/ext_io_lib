@@ -46,6 +46,19 @@ int main(void) {
 	// bool array, returns pointer to first memory addr of heap
 	// bool *bb = getBoolArr(2);
 	// showBoolArr(bb, 2);
-
+	
+	// sample use case with int array to 
+	// calculate sum of elements of arr
+	/*
+	int sum = 0;
+	int lenArr = 5; // fixed length
+	int *n = getIntArr(lenArr, "Enter Marks : ");
+	
+	for(int i = 0; i < lenArr; i++) {
+		sum += n[i];
+	}
+	
+	cout << "Sum = " << sum << "\n";
+	*/
 	return 0;
 }
