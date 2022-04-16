@@ -2,8 +2,8 @@
 **C++ library that seeks to add basic I/O features**
 
 
-
 ## Planned Features
+
 ### Implemented Already
 - [X] `getIntArr();` : Get int array
 - [X] `getFloatArr();` : Get float array
@@ -11,6 +11,7 @@
 - [X] `showIntArr();` : Display any argument with formatting *BAREBONES FOR NOW*
 - [X] `showCharArr();` : Display any argument with formatting *BAREBONES FOR NOW* 
 - [X] `showFloatArr();` : Display any argument with formatting *BAREBONES FOR NOW*
+
 ### Planned Features | WIP
 - [ ] : Proper display functionality for each of the primitives and arrays with more formatting
 - [ ] : Fix buffer related issues resulting in various bugs for incorrect inputs
@@ -18,7 +19,6 @@
 - [ ] : Write errors to a proper error log file
 - [ ] : Update the release
 - [ ] : Implement a bashscript for each install
-
 
 
 ## Current Features
@@ -29,12 +29,11 @@
 - Get String  : `getString("Prompt Goes Here");`
 - Get Bool    : `getBool("Prompt Goes Here");`
 
-  ### Array Input Functionality
+### Array Input Functionality
 - Get Int Array : `getIntArr(size, "Prompt Goes Here");`
 - Get Float Array : `getFloatArr(size, "Prompt Goes Here");`
 - Get Char Array : `getCharArr(size, "Prompt Goes Here");`
 - Get Bool Array : `getBoolArr(size, "Prompt Goes Here");`
-
 
 ### Array Display Functionality : *WIP*
 - Display Int Array : `showIntArr(arr_ptr, size);`
@@ -46,7 +45,7 @@
 ## How To Use 
 - Download ext_io.h
 - Place it on the directory of your project
-- Include ext_io.h
+- Include ext_io.h : `#include "ext_io.h"` **MUST BE IN SAME DIRECTORY**
 
 
 ## Sample Use Cases
