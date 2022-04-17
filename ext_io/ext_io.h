@@ -287,4 +287,24 @@ bool floatExists(float *arrPtr, float val = 0, int len = 5) {
 	return 0;
 }
 
+// find if a given float value exists in an UNIQUE float array, returns 1 or 0
+bool charExists(char *arrPtr, char val = 'a', int len = 5) {
+	bool found = 0; // false by default
+	
+	for(int i = 0; i < len; i++) {
+		if(arrPtr[i] == val) {
+			found = 1; // set flag to 1
+			break;
+		} 
+	}
+	
+	if(found == 1) {
+		return found;
+	} else {
+		return found;
+	}
+	
+	return 0;
+}
+
 #endif
