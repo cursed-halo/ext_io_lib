@@ -307,4 +307,39 @@ bool charExists(char *arrPtr, char val = 'a', int len = 5) {
 	return 0;
 }
 
+// Array count functions - Overloaded
+
+// count elements in an array <int>
+int count(int *arrPtr, int len){
+	int count = 0; // set to 0
+	
+	for(int i = 0; i < len; i++) {
+		count++;
+	}
+	
+	return count;
+}
+
+// count elements in an array <float>
+int count(float *arrPtr, int len){
+	int count = 0; // set to 0
+	
+	for(int i = 0; i < len; i++) {
+		count++;
+	}
+	
+	return count;
+}
+
+// count elements in an array <char>
+int count(char *arrPtr, int len){
+	int count = 0; // set to 0
+	
+	for(int i = 0; i < len; i++) {
+		count++;
+	}
+	
+	return count;
+}
+
 #endif
