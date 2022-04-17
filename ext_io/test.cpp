@@ -31,8 +31,9 @@ int main(void) {
 	// must declare a relevant pointer for this to work, like below
 	
 	// int array, returns pointer to first memory addr of heap
-	// int *ii = getIntArr(2);
-	// showIntArr(ii, 2);
+	 int *ii = getIntArr(2);
+	 showIntArr(ii, 2);
+	 findIntArr(ii, 2, 2);
 
 	// float array, returns pointer to first memory addr of heap
 	// float *ff = getFloatArr(2);

@@ -255,7 +255,7 @@ int findIntArr(int *arrPtr, int val = 0, int len = 5) {
 			return i; // if the value exists returns the location (unique)
 			break;
 		} else {
-			cout << "\nFailure : No Match Found\n"l
+			cout << "\nFailure : No Match Found\n";
 		}
 	}
 }
