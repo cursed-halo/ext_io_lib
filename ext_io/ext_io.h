@@ -249,7 +249,15 @@ double doubleSum(float *arrPtr, int len = 5) {
 
 // find if a given character exists in an int array
 int findIntArr(int *arrPtr, int val = 0, int len = 5) {
-	// wip
+	for(int i = 0; i < len; i++) {
+		if(arrPtr[i] == val) {
+			cout << "\nSuccess : Match Found\n";
+			return i; // if the value exists returns the location (unique)
+			break;
+		} else {
+			cout << "\nFailure : No Match Found\n"l
+		}
+	}
 }
 
 #endif
