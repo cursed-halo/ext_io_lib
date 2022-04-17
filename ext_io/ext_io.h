@@ -342,4 +342,15 @@ int count(char *arrPtr, int len){
 	return count;
 }
 
+// count elements in an array <bool>
+int count(bool *arrPtr, int len){
+	int count = 0; // set to 0
+	
+	for(int i = 0; i < len; i++) {
+		count++;
+	}
+	
+	return count;
+}
+
 #endif
