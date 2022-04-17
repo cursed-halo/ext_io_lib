@@ -267,7 +267,7 @@ bool intExists(int *arrPtr, int val = 0, int len = 5) {
 	return 0;
 }
 
-// find if a given int value exists in an UNIQUE float array, returns 1 or 0
+// find if a given float value exists in an UNIQUE float array, returns 1 or 0
 bool floatExists(float *arrPtr, float val = 0, int len = 5) {
 	bool found = 0; // false by default
 	

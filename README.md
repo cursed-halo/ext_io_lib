@@ -44,6 +44,10 @@
 - Display Char Array : `showCharArr(arr_ptr, size);`
 - Display Bool Array : `showBoolArr(arr_ptr, size);`
 
+### Additional Array Functionality : *WIP*
+- Find If An Int Exists In An Unique Int Array : `intExists(arr_ptr, val, size);`
+- Find If Float Exists In An Unique Float Array : `floatExists(arr_ptr, val, size);`
+
 
 ## How To Use 
 - Download ext_io.h
