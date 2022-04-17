@@ -247,20 +247,36 @@ double doubleSum(float *arrPtr, int len = 5) {
 }
 // end of header
 
-// find if a given character exists in an int array
+// find if a given int value exists in an int array
 int findIntArr(int *arrPtr, int val = 0, int len = 5) {
 	for(int i = 0; i < len; i++) {
 		if(arrPtr[i] == val) {
 			cout << "\nSuccess : Match Found\n";
 			return i; // if the value exists returns the location (unique)
-			break;
+			break; //  break out
 		} else {
 			cout << "\nFailure : No Match Found\n";
-			return 0;
-			break;
+			return 0; // if it doesnt find anything return a 0 value
+			break; // break out
 		}
 	}
-	return 0;
+	return 0; // this should not be reached
+}
+
+// find if a given float value exists in a float array
+float findFloatArr(float *arrPtr, float val = 0.0, int len = 5) {
+	for(int i = 0; i < len; i++) {
+		if(arrPtr[i] == val) {
+			cout << "\nSuccess : Match Found\n";
+			return i; // if the value exists returns the location (unique)
+			break; //  break out
+		} else {
+			cout << "\nFailure : No Match Found\n";
+			return 0; // if it doesnt find anything return a 0 value
+			break; // break out
+		}
+	}
+	return 0; // this should not be reached
 }
 
 #endif
