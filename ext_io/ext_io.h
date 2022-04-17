@@ -267,20 +267,24 @@ bool intExists(int *arrPtr, int val = 0, int len = 5) {
 	return 0;
 }
 
-// find if a given float value exists in a float array - NEEDS FIXING
-float findFloatArr(float *arrPtr, float val = 0.0, int len = 5) {
+// find if a given int value exists in an UNIQUE float array, returns 1 or 0
+bool floatExists(float *arrPtr, float val = 0, int len = 5) {
+	bool found = 0; // false by default
+	
 	for(int i = 0; i < len; i++) {
 		if(arrPtr[i] == val) {
-			cout << "\nSuccess : Match Found\n";
-			return i; // if the value exists returns the location (unique)
-			break; //  break out
-		} else {
-			cout << "\nFailure : No Match Found\n";
-			return 0; // if it doesnt find anything return a 0 value
-			break; // break out
-		}
+			found = 1; // set flag to 1
+			break;
+		} 
 	}
-	return 0; // this should not be reached
+	
+	if(found == 1) {
+		return found;
+	} else {
+		return found;
+	}
+	
+	return 0;
 }
 
 #endif
