@@ -47,6 +47,7 @@
 ### Additional Array Functionality : *WIP*
 - Find If An Int Exists In An Unique Int Array : `intExists(arr_ptr, val, size);`
 - Find If Float Exists In An Unique Float Array : `floatExists(arr_ptr, val, size);`
+- Find If Char Exists In An Unique Char Array : `charExists(arr_ptr, val, size);`
 
 
 ## How To Use 
