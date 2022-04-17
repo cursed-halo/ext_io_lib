@@ -38,13 +38,13 @@
 - Get Char Array : `getCharArr(size, "Prompt Goes Here");`
 - Get Bool Array : `getBoolArr(size, "Prompt Goes Here");`
 
-### Array Display Functionality : *WIP*
+### Array Display Functionality : **WIP**
 - Display Int Array : `showIntArr(arr_ptr, size);`
 - Display Float Array : `showFloatArr(arr_ptr, size);`
 - Display Char Array : `showCharArr(arr_ptr, size);`
 - Display Bool Array : `showBoolArr(arr_ptr, size);`
 
-### Find In Array
+### Find In Array : **wip**
 - Find If An Int Exists In An Unique Int Array : `intExists(arr_ptr, val, size);`
 - Find If Float Exists In An Unique Float Array : `floatExists(arr_ptr, val, size);`
 - Find If Char Exists In An Unique Char Array : `charExists(arr_ptr, val, size);`
@@ -73,3 +73,4 @@ Check the test.cpp file for implementation details
 - `showCharArr();` has problems printing the memory location 
 - `showXArr();` is just a demo function for now, and causes several issues with formatting
 - `getBoolArr();` has a hard time with any non `true` or `false` inputs and gives unexpected results 
+- find algos are linear and need to be optimized
