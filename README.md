@@ -11,17 +11,18 @@
 - [X] `showIntArr();` : Display any argument with formatting *BAREBONES FOR NOW*
 - [X] `showCharArr();` : Display any argument with formatting *BAREBONES FOR NOW* 
 - [X] `showFloatArr();` : Display any argument with formatting *BAREBONES FOR NOW*
+- [X] `count;`: count elements in array
 
 ### Planned Features | WIP
 - [ ] : Proper display functionality for each of the primitives and arrays with more formatting
 - [ ] : Fix buffer related issues resulting in various bugs for incorrect inputs
-- [ ] : Implement proper error handling
-- [ ] : Write errors to a proper error log file
+- [ ] : Implement proper error handling - **WIP**
+- [ ] : Write errors to a proper error stream and log file to a log stream with `cerr` and `clog`
 - [ ] : Update the release
-- [ ] : Implement a bashscript for each install
-- [ ] : Sum all elements of int, float arrays
+- [ ] : Implement a bashscript for each install 
+- [ ] : Sum all elements of int, float arrays - **WIP**
 - [ ] : Average all elements of int, float arrays - **WIP**
-- [ ] : Find element by value or index in arrays
+- [ ] : Find element by value or index in arrays - **WIP**
 
 
 ## Current Features
