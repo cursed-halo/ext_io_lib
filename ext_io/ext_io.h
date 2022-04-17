@@ -248,7 +248,7 @@ double doubleSum(float *arrPtr, int len = 5) {
 // end of header
 
 // find if a given int value exists in an UNIQUE int array, returns 1 or 0
-bool findInt(int *arrPtr, int val = 0, int len = 5) {
+bool intExists(int *arrPtr, int val = 0, int len = 5) {
 	bool found = 0; // false by default
 	
 	for(int i = 0; i < len; i++) {
