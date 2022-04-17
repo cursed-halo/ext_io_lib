@@ -247,7 +247,7 @@ double doubleSum(float *arrPtr, int len = 5) {
 }
 // end of header
 
-// find if a given int value exists in an int array
+// find if a given int value exists in an int array - NEEDS FIXING
 int findIntArr(int *arrPtr, int val = 0, int len = 5) {
 	for(int i = 0; i < len; i++) {
 		if(arrPtr[i] == val) {
@@ -263,7 +263,7 @@ int findIntArr(int *arrPtr, int val = 0, int len = 5) {
 	return 0; // this should not be reached
 }
 
-// find if a given float value exists in a float array
+// find if a given float value exists in a float array - NEEDS FIXING
 float findFloatArr(float *arrPtr, float val = 0.0, int len = 5) {
 	for(int i = 0; i < len; i++) {
 		if(arrPtr[i] == val) {
