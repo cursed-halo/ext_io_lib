@@ -49,10 +49,11 @@
 - Find If Float Exists In An Unique Float Array : `floatExists(arr_ptr, val, size);`
 - Find If Char Exists In An Unique Char Array : `charExists(arr_ptr, val, size);`
 
-### Size Of Array
+### Size Of Array - Overloaded
 - Int Array : `count(arr_ptr, val);`
 - Float : `count(arr_ptr, val);`
 - Char Array : `count(arr_ptr, val);`
+- BoolArray : `count(arr_ptr, val);`
 
 
 ## How To Use 
