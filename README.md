@@ -44,10 +44,15 @@
 - Display Char Array : `showCharArr(arr_ptr, size);`
 - Display Bool Array : `showBoolArr(arr_ptr, size);`
 
-### Additional Array Functionality : *WIP*
+### Find In Array
 - Find If An Int Exists In An Unique Int Array : `intExists(arr_ptr, val, size);`
 - Find If Float Exists In An Unique Float Array : `floatExists(arr_ptr, val, size);`
 - Find If Char Exists In An Unique Char Array : `charExists(arr_ptr, val, size);`
+
+### Size Of Array
+- Int Array : `count(arr_ptr, val);`
+- Float : `count(arr_ptr, val);`
+- Char Array : `count(arr_ptr, val);`
 
 
 ## How To Use 
