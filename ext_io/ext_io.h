@@ -256,8 +256,11 @@ int findIntArr(int *arrPtr, int val = 0, int len = 5) {
 			break;
 		} else {
 			cout << "\nFailure : No Match Found\n";
+			return 0;
+			break;
 		}
 	}
+	return 0;
 }
 
 #endif

@@ -33,7 +33,8 @@ int main(void) {
 	// int array, returns pointer to first memory addr of heap
 	 int *ii = getIntArr(2);
 	 showIntArr(ii, 2);
-	 findIntArr(ii, 2, 2);
+	 int n = findIntArr(ii, 2, 2);
+	 cout << "Found at : " << n;
 
 	// float array, returns pointer to first memory addr of heap
 	// float *ff = getFloatArr(2);
