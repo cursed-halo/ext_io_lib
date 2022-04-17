@@ -225,7 +225,7 @@ void showBoolArr(bool *p, int l = 5) {
 
 // =======================array functions=======================//
 // return the sum of all members of int array
-long int intSum(int *arrPtr, int len) {
+long int intSum(int *arrPtr, int len = 5) {
 	long int sum = 0; // set sum to 0
 	
 	for(int i = 0; i < len; i++) {
@@ -236,7 +236,7 @@ long int intSum(int *arrPtr, int len) {
 }
 
 // return the sum of all members of float array
-double doubleSum(float *arrPtr, int len) {
+double doubleSum(float *arrPtr, int len = 5) {
 	double sum = 0; // set sum to 0
 	
 	for(int i = 0; i < len; i++) {
@@ -246,5 +246,10 @@ double doubleSum(float *arrPtr, int len) {
 	return sum;
 }
 // end of header
+
+// find if a given character exists in an int array
+int findIntArr(int *arrPtr, int val = 0, int len = 5) {
+	// wip
+}
 
 #endif
