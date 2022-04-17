@@ -58,5 +58,11 @@ int main(void) {
 
 	// cout << "Sum = " << intSum(n, lenArr) << "\n";
 	
+	// test cases for count
+	
+	// cout << "Size <int> = " << count(getIntArr(10), 10);
+	// cout << "\nSize <float> = " << count(getFloatArr(10), 10);
+	// cout << "\nSize <char> = " << count(getCharArr(10), 10);
+	
 	return 0;
 }
