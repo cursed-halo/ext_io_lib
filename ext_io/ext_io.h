@@ -12,6 +12,7 @@ using std::cout, std::cin, std::string;
 
 // const vars
 const int MAXIMUM = 10000;
+const int ERR_INVALID_IP = 1; // for invalid input
 
 // ===================regular input functions====================//
 
@@ -27,12 +28,22 @@ int getInt(const string m = "Enter Int : ") {
 
 // prompt for input, return float
 float getFloat(const string m = "Enter Float : ") {
-	float temp;
-
+	float temp = 0.0;
+	
 	cout << m;
-	cin >> temp;
-
-	return temp;
+	try {
+		cin >> temp;
+		if(!cin) {
+			throw ERR_INVALID_IP; // error code = 1 for primitive invalid I/P
+		} else {
+			return temp;
+		}
+	}
+	catch(int ERR_INVALID_IP) {
+		cout << "\nERROR : " << ERR_INVALID_IP << "\n";
+	}
+	
+	return 0.0; // returns a default value in case something went wrong
 }
 
 // prompt for input, return char

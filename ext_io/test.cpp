@@ -12,7 +12,8 @@ int main(void) {
 	// basic input types, returns the value(s)
 
 	// int n = getInt();
-	// float f = getFloat();
+	float f = getFloat();
+	cout << f;
 	// char c = getChar();
 	// string s = getString();
 	// bool b = getBool();
