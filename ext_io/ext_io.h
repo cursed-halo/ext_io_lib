@@ -78,14 +78,24 @@ char getChar(const string m = "Enter Char : ") {
 
 // prompt for input, return string
 string getString(const string m = "Enter String : ") {
-	string temp;
+	string temp = " "; // default value
 
 	cout << m;
 	cin.clear();			   // clear immediate buffer
 	cin.ignore(MAXIMUM, '\n'); // ignore the next MAX characters upto \n
-	getline(cin, temp);
-
-	return temp;
+	try {
+		getline(cin, temp);
+		if (!cin) {
+			throw ERR_INVALID_IP;
+		} else {
+			return temp;
+		}
+	}
+	catch(int ERR_INVALID_IP) {
+		cout << "\nERROR : " << ERR_INVALID_IP << "\n";
+	}
+	
+	return temp; // returns a default value in case something went wrong
 }
 
 // prompt for input, return bool
@@ -93,6 +103,8 @@ bool getBool(const string m = "Enter Bool : ") {
 	bool temp;
 
 	cout << m;
+	try {
+	}
 	cin >> temp;
 
 	// testing with if - convert to try catch
