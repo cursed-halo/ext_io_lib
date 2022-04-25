@@ -33,3 +33,5 @@
 
 # Additional exclusion for testspace.cpp
 testspace.cpp
+.vscode
+*.json
