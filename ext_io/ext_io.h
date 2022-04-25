@@ -18,7 +18,7 @@ const int ERR_INVALID_IP = 1; // for invalid input
 
 // prompt for input, return int
 int getInt(const string m = "Enter Int : ") {
-	int temp = 0;
+	int temp = 0; // default value
 
 	cout << m;
 	try {
@@ -38,7 +38,7 @@ int getInt(const string m = "Enter Int : ") {
 
 // prompt for input, return float
 float getFloat(const string m = "Enter Float : ") {
-	float temp = 0.0;
+	float temp = 0.0; // default value
 	
 	cout << m;
 	try {
@@ -58,16 +58,22 @@ float getFloat(const string m = "Enter Float : ") {
 
 // prompt for input, return char
 char getChar(const string m = "Enter Char : ") {
-	char temp;
+	char temp = ' '; // default value
 
 	cout << m;
-	cin >> temp;
-
-	if (int(temp) >= 0 && int(temp) <= 127) {
-		return temp;
-	} else {
-		return 'A'; // default case, may not work
+	try {
+		cin >> temp;
+		if(!cin) {
+			throw ERR_INVALID_IP; // error code = 1 for primitive invalid I/P
+		} else {
+			return temp;
+		}
 	}
+	catch(int ERR_INVALID_IP) {
+		cout << "\nERROR : " << ERR_INVALID_IP << "\n";
+	}
+	
+	return temp; // returns a default value in case something went wrong
 }
 
 // prompt for input, return string
