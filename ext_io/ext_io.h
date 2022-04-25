@@ -100,19 +100,22 @@ string getString(const string m = "Enter String : ") {
 
 // prompt for input, return bool
 bool getBool(const string m = "Enter Bool : ") {
-	bool temp;
+	bool temp = 0; // default value
 
 	cout << m;
 	try {
+		cin >> temp;
+		if (!cin) {
+			throw ERR_INVALID_IP;
+		} else {
+			return temp;
+		}
 	}
-	cin >> temp;
-
-	// testing with if - convert to try catch
-	if (temp == 0 || temp == 1) {
-		return temp;
-	} else {
-		return 1; // returns 1 if input is anything other than 0 or 1
+	catch(int ERR_INVALID_IP) {
+		cout << "\nERROR : " << ERR_INVALID_IP << "\n";
 	}
+	
+	return temp; // returns a default value in case something went wrong
 }
 
 // ===================array input functions====================//
